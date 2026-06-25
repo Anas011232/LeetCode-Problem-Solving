@@ -58,6 +58,8 @@ int main()
         cin>>val;
         root=insert(root,val);
     }
+
+    cout<<height(root);
    
     return 0;
 }
