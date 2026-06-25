@@ -18,6 +18,24 @@ class Node
 
 };
 
+Node* insert(Node* root, int key)
+{
+    if(root==NULL)
+    {
+        return new Node(key);
+
+    }
+    if(key<root->val)
+    {
+        root->left=insert(root->left,key);
+    }
+    else{
+        root->right=insert(root->right,key);
+    }
+
+    return root;
+}
+
 int main()
 {
     
