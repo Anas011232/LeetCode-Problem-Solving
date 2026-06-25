@@ -51,6 +51,16 @@ void inorder(Node* root)
 
 int main()
 {
-    
+    Node* root=NULL;
+
+    int n,val;
+    cin>>n;
+
+    for(int i=0; i<n; i++)
+    {
+        cin>>val;
+        root=insert(root,val);
+    }
+    inorder(root);
     return 0;
 }
